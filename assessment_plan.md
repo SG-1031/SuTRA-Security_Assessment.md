@@ -13,18 +13,18 @@ This assessment must only be conducted with explicit permission. All activities 
 
 ## Assessment Phases
 
-| Phase | Description | Tools/Notes |
-|-------|-------------|-------------|
-| 1. Preparation | Define scope, ensure permission, and plan methodology | GitHub repo setup, documentation templates |
-| 2. Reconnaissance | Gather technical and contextual information about the application | WhatWeb, Wappalyzer, Nmap, DNSdumpster |
-| 3. Threat Modeling | Identify possible attack surfaces, inputs, and user roles | STRIDE, OWASP Threat Modeling Cheat Sheet |
-| 4. Vulnerability Scanning | Scan for known issues using automated tools | Nikto, OWASP ZAP, Nuclei |
-| 5. Manual Testing | Validate scan results and test for logic flaws, injection, and auth issues | Burp Suite, Postman |
-| 6. Authentication Testing | Evaluate login and session management | Brute force resistance, session timeout, token handling |
-| 7. Data Exposure Review | Look for sensitive information leaks in requests/responses | Dev Tools, Burp Proxy, Mitmproxy |
-| 8. HTTPS & Header Analysis | Check TLS/SSL setup and HTTP security headers | SSL Labs, SecurityHeaders.com |
-| 9. Reporting | Document findings with evidence, severity ratings, and fixes | Markdown reports, screenshots, logs |
-| 10. Re-testing (if allowed) | Validate fixes for previously found vulnerabilities | Same tools and scripts reused |
+| Phase                       | Description                                                                | Tools/Notes                                             |
+|-----------------------------|----------------------------------------------------------------------------|---------------------------------------------------------|
+| 1. Preparation              | Define scope, ensure permission, and plan methodology                      | GitHub repo setup, documentation templates              |
+| 2. Reconnaissance           | Gather technical and contextual information about the application          | WhatWeb, Wappalyzer, Nmap, DNSdumpster                  |
+| 3. Threat Modeling          | Identify possible attack surfaces, inputs, and user roles                  | STRIDE, OWASP Threat Modeling Cheat Sheet               |
+| 4. Vulnerability Scanning   | Scan for known issues using automated tools                                | Nikto, OWASP ZAP, Nuclei                                |
+| 5. Manual Testing           | Validate scan results and test for logic flaws, injection, and auth issues | Burp Suite, Postman                                     |
+| 6. Authentication Testing   | Evaluate login and session management                                      | Brute force resistance, session timeout, token handling |
+| 7. Data Exposure Review     | Look for sensitive information leaks in requests/responses                 | Dev Tools, Burp Proxy, Mitmproxy                        |
+| 8. HTTPS & Header Analysis  | Check TLS/SSL setup and HTTP security headers                              | SSL Labs, SecurityHeaders.com                           |
+| 9. Reporting                | Document findings with evidence, severity ratings, and fixes               | Markdown reports, screenshots, logs                     |
+| 10. Re-testing (if allowed) | Validate fixes for previously found vulnerabilities                        | Same tools and scripts reused                           |
 
 ---
 
