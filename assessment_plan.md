@@ -1,51 +1,54 @@
-# Web Application Security Assessment Plan
+# Cybersecurity Assessment Plan: sutra.fcgo.gov.np
 
-## Target Application
-**URL:** https://sutra.fcgo.gov.np/
+## Project Overview
 
-## Objective
-To perform a structured cybersecurity assessment of the public and authenticated components of the specified web-based application. The goal is to identify potential vulnerabilities and provide actionable recommendations.
+**Target:** [https://sutra.fcgo.gov.np](https://sutra.fcgo.gov.np)  
+**Type:** Web-based government application  
+**Assessor:** Subash Gurung  
+**Purpose:** To evaluate the security posture of the target application using only publicly available information and accessible components, without attempting intrusive or authenticated testing.
 
-## Legal Notice
-This assessment must only be conducted with explicit permission. All activities will adhere to ethical guidelines and applicable laws.
+## Scope
 
----
+- Public-facing web pages and resources only  
+- No authenticated or restricted access testing  
+- No vulnerability exploitation or intrusive scanning (e.g., no brute force, no injection attempts)  
+- Information gathering through open-source intelligence (OSINT) and passive analysis  
+- Security configuration review (headers, SSL/TLS) via non-intrusive tools
 
-## Assessment Phases
+## Tools & Environment
 
-| Phase                       | Description                                                                | Tools/Notes                                             |
-|-----------------------------|----------------------------------------------------------------------------|---------------------------------------------------------|
-| 1. Preparation              | Define scope, ensure permission, and plan methodology                      | GitHub repo setup, documentation templates              |
-| 2. Reconnaissance           | Gather technical and contextual information about the application          | WhatWeb, Wappalyzer, Nmap, DNSdumpster                  |
-| 3. Threat Modeling          | Identify possible attack surfaces, inputs, and user roles                  | STRIDE, OWASP Threat Modeling Cheat Sheet               |
-| 4. Vulnerability Scanning   | Scan for known issues using automated tools                                | Nikto, OWASP ZAP, Nuclei                                |
-| 5. Manual Testing           | Validate scan results and test for logic flaws, injection, and auth issues | Burp Suite, Postman                                     |
-| 6. Authentication Testing   | Evaluate login and session management                                      | Brute force resistance, session timeout, token handling |
-| 7. Data Exposure Review     | Look for sensitive information leaks in requests/responses                 | Dev Tools, Burp Proxy, Mitmproxy                        |
-| 8. HTTPS & Header Analysis  | Check TLS/SSL setup and HTTP security headers                              | SSL Labs, SecurityHeaders.com                           |
-| 9. Reporting                | Document findings with evidence, severity ratings, and fixes               | Markdown reports, screenshots, logs                     |
-| 10. Re-testing (if allowed) | Validate fixes for previously found vulnerabilities                        | Same tools and scripts reused                           |
+- **Reconnaissance & Information Gathering:** Nmap (non-intrusive), WhatWeb, BuiltWith, Shodan, Dig  
+- **Security Configuration:** SSL Labs, SecurityHeaders.com  
+- **Passive Analysis:** Browser Developer Tools, online scanners  
+- **Documentation:** Markdown files, screenshots, logs
 
 ---
 
-## Deliverables
-- `README.md`: Summary of the assessment project
-- `findings.md`: Detailed list of identified issues
-- `logs/`: Scanner and manual test outputs
-- `scripts/`: Custom test scripts and payloads
-- `screenshots/`: Screenshots as evidence of vulnerabilities
-- `docs/`: Supporting documentation or references
+## Step-by-Step Assessment Plan
+
+| Phase | Description | Tools/Techniques | Output |
+|-------|-------------|------------------|--------|
+| Preparation | Define goals, confirm scope limited to public info | Documentation, risk policy | Clear scope documentation |
+| Reconnaissance | Collect open-source info: domains, IPs, tech stack | WhatWeb, BuiltWith, Shodan, Dig | List of technologies and endpoints |
+| Passive Security Analysis | Analyze HTTPS setup, security headers | SSL Labs, SecurityHeaders.com | SSL/TLS and header configuration report |
+| Content Analysis | Review publicly available content and files | Browser Dev Tools, manual inspection | Summary of publicly exposed data |
+| Vulnerability Research | Research known vulnerabilities related to identified tech | CVE databases, NVD, vendor advisories | List of potential risks |
+| Reporting | Document findings, risks, and remediation advice | Markdown report, screenshots | `findings.md` and final report |
 
 ---
 
-## Methodology Standards
-- OWASP Web Security Testing Guide (WSTG)
-- OWASP Top 10
-- CVSS v3.1 for risk scoring
+## References
+
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)  
+- [OWASP Testing Guide - Passive Testing](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering)  
+- [SSL Labs Test](https://www.ssllabs.com/ssltest/)  
+- [Security Headers](https://securityheaders.com/)  
+- [National Vulnerability Database (NVD)](https://nvd.nist.gov/)
 
 ---
 
-## Notes
-- All tests should avoid causing service disruption.
-- Time-boxed testing to avoid prolonged impact.
-- Document test dates and times clearly.
+## Disclaimer
+
+This assessment uses only publicly available information and does not involve intrusive or unauthorized testing. It complies with ethical guidelines and legal requirements.
+
+
