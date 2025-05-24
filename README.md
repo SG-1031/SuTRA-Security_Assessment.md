@@ -1,73 +1,49 @@
-# SuTRA Web Application Security Assessment
+# Cybersecurity Assessment of sutra.fcgo.gov.np
 
-## Target
-**Application URL:** https://sutra.fcgo.gov.np/
+## Overview
 
-## Assessor
-**Name:** Subash Gurung  
-**Role:** Cybersecurity Analyst  
-**Date:** 2025-05-24
+This repository contains the documentation and results of a cybersecurity assessment conducted on the web-based application [https://sutra.fcgo.gov.np](https://sutra.fcgo.gov.np). The assessment is limited to publicly available information and non-intrusive methods to evaluate the security posture of the application.
 
----
+## Objectives
 
-## Project Structure
+- Collect and analyze publicly available information about the target application
+- Identify potential security misconfigurations or risks visible from the outside
+- Review HTTPS and security header configurations
+- Research known vulnerabilities related to the technologies used by the site
+- Provide recommendations to improve security based on findings
 
-```
-repo/
-├── README.md              # Project overview
-├── findings.md            # Documented vulnerabilities and issues
-├── logs/                  # Scanner and manual test logs
-├── screenshots/           # Visual evidence of findings
-├── scripts/               # Custom payloads or automation scripts
-└── docs/                  # Additional resources or references
-```
+## Scope
 
----
+- Public-facing web pages and resources only
+- No access to authenticated or restricted areas
+- No intrusive scanning or exploitation attempts
+- Use of open-source intelligence (OSINT) and passive analysis tools only
 
-## README.md (Contents)
+## Methodology
 
-### Web Application Security Assessment
+The assessment followed these key phases:
 
-This repository contains a security assessment of the government web-based application at [https://sutra.fcgo.gov.np](https://sutra.fcgo.gov.np/). It includes the methodology, tools used, findings, and recommendations.
+1. **Reconnaissance:** Gathering technical and infrastructure information using tools such as WhatWeb, BuiltWith, Shodan, and DNS enumeration.
+2. **Passive Security Analysis:** Checking HTTPS setup and HTTP security headers using SSL Labs and SecurityHeaders.com.
+3. **Content Review:** Manual inspection of publicly accessible content, error messages, and exposed files.
+4. **Vulnerability Research:** Identifying any known vulnerabilities associated with detected technologies.
+5. **Reporting:** Documenting findings with evidence and recommendations.
 
-### Objectives
-- Identify potential security vulnerabilities
-- Analyze risk impact and likelihood
-- Provide actionable remediation suggestions
+## Tools Used
 
-### Scope
-- Public endpoints and login forms
-- Basic authenticated sections (with permission)
+- WhatWeb  
+- BuiltWith  
+- Shodan  
+- DNS Enumeration (dig, nslookup)  
+- SSL Labs  
+- SecurityHeaders.com  
+- Browser Developer Tools  
 
-### Methodology
-- Reconnaissance
-- Threat modeling
-- Automated scanning
-- Manual testing
-- Reporting and recommendations
+## Disclaimer
 
-### Tools Used
-- Nmap, WhatWeb, Nikto
-- OWASP ZAP, Burp Suite
-- Postman, SSL Labs, SecurityHeaders
-
-### Legal Disclaimer
-Assessment conducted under educational and ethical guidelines. No unauthorized access or harm was intended.
+This assessment was performed strictly using publicly available information without any intrusive testing or unauthorized access. It is intended for educational purposes and to support security awareness. No part of this assessment violates any applicable laws or regulations.
 
 ---
 
-## findings.md (Initial Content)
-
-# Security Findings Summary
-
-| ID | Category       | Vulnerability          | Risk   | Status             |
-|----|----------------|------------------------|--------|--------------------|
-| 1  | Authentication | Weak login mechanism   | Medium | Pending validation |
-| 2  | Injection      | Possible SQL Injection | High   | In progress        |
-
----
-
-## logs/, screenshots/, scripts/, docs/
-- Use these folders to store output from tools like Burp, ZAP, or screenshots of issues.
-- Scripts can include fuzzing payloads or automation helpers.
-- Docs can hold references to CVEs, OWASP docs, etc.
+*Prepared by Subash Gurung*  
+*Cybersecurity Analyst*
