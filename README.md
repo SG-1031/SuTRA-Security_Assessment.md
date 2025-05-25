@@ -46,5 +46,5 @@ This assessment was performed strictly using publicly available information with
 ---
 
 *Prepared by Subash Gurung*  
-*Cybersecurity Analyst* 
+*Cybersecurity Analyst*  
 *Date: 2025-05-25*
