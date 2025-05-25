@@ -107,8 +107,3 @@ Address: 103.69.124.8
 * Upgrade PHP and Laravel to supported versions
 * Monitor DNS records for anomalies (e.g., redirection to other gov sites)
 * Periodically validate IP resolution and geolocation
-
----
-
-**Prepared by:** *Cybersecurity Analyst (Passive Recon Only)*
-**Date:** 2025-05-25
