@@ -96,7 +96,7 @@ Name:    www.fcgo.gov.np
 Address: 103.69.124.8
 ```
 
-* `103.69.124.8` leads to an unrelated site (Education Coordination Office, Doti).
+* `103.69.124.8` leads to an unrelated site (Education Development and Coordination Unit, Doti).
 
 ---
 
